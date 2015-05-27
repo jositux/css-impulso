@@ -1,0 +1,2310 @@
+/* ImpulsoTV dotg-ohweb basado en Framework - de AndrÃ© Griffin
+------------------------------------------------
+[Tabla de contenidos]
+
+ 0.Reset
+ 1.Global
+ 2.Layout
+ 3.Main
+ 4.Sidebars
+ 5.Header
+ 6.Navigation
+ 7.Nodes
+ 8.Comments
+ 9.Blocks
+10.Footer
+11.CSS Support
+12.SlideShow
+13.Home
+14.Pages
+15.Servicios
+16.Planes
+17.Canales
+18.Novedades
+19.Contacto
+20.Search Page
+21.Responsive
+
+Font sizes: 16px base font with 24px line-height
+------------------------------------------------
+       font-size / line-height / margin-top
+------------------------------------------------
+40px = 2.5em     / 1.2         / 0.6em
+32px = 2em       / 1.5         / 0.75em
+24px = 1.5em     / 1           / 1em
+20px = 1.25em    / 1.2         / 1.2em
+16px = 1em       / 1..5        / 1.5em
+14px = 0.875em   / 1.7143      / 1.7143em
+13px = 0.8125em  / 1.8462      / 1.8462em
+12px = 0.75em    / 2           / 2em
+10px = 0.625em   / 2.4         / 2.4em
+
+Equation for font sizing: 
+  Desired px Ã· Default (or parent) px = em size
+------------------------------------------------*/
+
+/**
+ * 0.RESET 
+ */
+
+@import "http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/reset.css";
+
+/**
+ * 1.GLOBAL
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,500,300,200,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body {
+  background-color: #1a1a1a;
+  color: #333333;
+  font-family: "Raleway", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1a1a;
+}
+
+.front h1, .front h2 {
+  color: #343737;
+}
+
+h1, .h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-top: 0.75em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: 1em;
+}
+
+h2.pane-title, .view-galeria-imagenes h2.title {
+  font-size: 35px;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
+  padding-left: 40px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+  color: #444848;
+}
+
+h3, .h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-top: 1.2em;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.3;
+  margin: 0 0 1.5em 0;
+}
+
+a { color: #e60008; text-decoration: none; }
+
+a:visited { color: #e60008; }
+
+a:hover, a:active, li a.active  { color: #e60008; }
+
+a:focus { outline: 0; }
+
+a:hover, a:active { outline: 0; }
+
+/* apply common styling after reset.css */
+
+li ul, li ol {  margin: 0; }
+ul, ol {  margin: 0 1.5em 1.5em 0;  padding-left: 1.5em; }
+ul {  list-style-type: disc; }
+ol {  list-style-type: decimal; }
+dl {  margin: 0 0 1.5em 0; }
+dl dt {  font-weight: bold; }
+dd {  margin-left: 1.5em; }
+hr {  background: #666;  border: none;  clear: both;  float: none;  height: 1px;  margin: 0 0 1.4375em;  width: 100%; }
+fieldset {  border: 1px solid #ccc;  margin: 0 0 1.4375em;  padding: 1.5em; }
+table {  margin-bottom: 1.5em;  width: 100%; }
+th, tr, td {  vertical-align: middle; }
+th { padding-right: 1em; }
+.sticky-header th, .sticky-table th {  border-bottom: 3px solid #ccc;  padding-right: 1em;  text-align: left; }
+strong { font-weight: bold; }
+
+/**
+ * 2.LAYOUT
+ */
+
+#container {
+  margin: 0 auto;
+}
+
+#frame {
+  width: 100%;
+  margin: auto;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos.png") top center no-repeat;
+  background-position: top center;
+  padding-top: 36px;
+  padding-bottom: 40px;
+}
+
+.front #frame {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos.png") top center no-repeat;
+}
+
+.not-front #frame {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos_internas.png") top center no-repeat;
+}
+
+#content {
+  background-color: #ececec;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+}
+
+
+#content.fixed {
+  margin-top: 134px;
+}
+
+.not-front #content{
+ padding-top: 25vw;
+}
+
+.not-front #content.fixed {
+  margin-top: 134px;
+}
+
+
+/**
+ * 3.MAIN
+ */
+
+/* 1 column: global values*/
+
+#main {
+  display: inline;
+  margin: 0;
+  background: url(http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png) no-repeat 36px bottom #ececec;
+  display: table;
+  width: 1180px;
+  padding: 36px;
+  padding-bottom: 120px;
+  margin: auto;
+}
+
+.not-front #main {
+  padding-top: 15px;
+  background: url(http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png) no-repeat 36px bottom #ececec;
+}
+
+/* 3 columns */
+
+body.two-sidebars #main {
+  float: left;
+  margin: 0 0 0 240px;
+  padding: 0;
+  width: 460px;
+}
+
+/* 2 columns: sidebar-first */
+
+body.sidebar-first #main {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+/* 2 columns: sidebar-second */
+
+body.sidebar-second #main {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+/**
+ * 4.SIDEBARS
+ */
+
+/* 3 columns: sidebar-first */
+
+body.two-sidebars #sidebar-first {
+  float: left;
+  margin: 0 0 0 -700px;
+  padding: 0;
+  width: 220px;
+}
+
+/* 3 columns: sidebar-second */
+
+body.two-sidebars #sidebar-second {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/* 2 columns: sidebar-first */
+
+body.sidebar-first #sidebar-first {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/* 2 columns: sidebar-second */
+
+body.sidebar-second #sidebar-second {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/**
+ * 5.HEADER
+ */
+
+#header {
+  margin: 0;
+  position: relative;
+  background: #1a1a1a;
+  width: 100%;
+   -webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+#header.fixed {
+  position: fixed;
+  top: 0;
+  -webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+  height: 70px;
+  z-index: 100;
+}
+
+#header-inner {
+  width: 1180px;
+  padding: 26px 36px 20px 36px;
+  margin: auto;
+  height: 82px;
+}
+
+#header #logo img {
+  display: none;
+}
+
+#header #logo {
+  float: left;
+  margin: 0 1em 0em 0;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo.png") no-repeat;
+  width: 270px;
+  height: 80px;
+}
+
+#header.fixed #logo {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo_mini.png") no-repeat;
+  width: 253px;
+  height: 64px;
+  margin-top: -26px;
+  margin-left: 18px;
+}
+
+#header #site-name-slogan {
+  float: left;
+  margin: 0 0 1.5em;
+}
+
+#header #site-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#header #site-name a:hover {
+  text-decoration: none;
+}
+
+#header #site-slogan {
+  margin: 0;
+}
+
+/* Header Search */
+
+#block-search-form {
+  float: right;
+  margin-top: 0;
+}
+
+#header.fixed #block-search-form {
+  display: none;
+}
+
+.logged-in #block-search-form {
+  margin-bottom: 5px;
+}
+
+#block-search-form input[type="submit"] {
+  display: none;
+}
+
+#block-search-form input[type="search"] {
+  padding-left: 25px;
+  width:265px;
+  height: 32px;
+  color: #ffffff;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/search.png") no-repeat 5px 8px #444848;
+  border: 0;
+}
+
+/**
+ * 6.NAVIGATION
+ */
+
+#navigation {
+  margin: 0;
+  padding: 0;
+  float:right;
+  margin-top: 2px;
+}
+
+#navigation ul#main-menu {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#main-menu li {
+  float: left;
+  margin: 0;
+  padding-left: 55px;
+  display: block;
+}
+
+#navigation ul#main-menu li.first {
+  padding-left: 0;
+}
+
+#navigation ul#main-menu li a {
+  color: #ececec;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#navigation ul#main-menu li a.active,
+#navigation ul#main-menu li a:hover {
+  color: #fae708;
+}
+
+#navigation ul#secondary-menu {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#secondary-menu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#secondary-menu li a {
+  display: block;
+  padding: 0 2em 0 0;
+}
+
+#navigation ul#secondary-menu li a.active {
+  color: #fae708;
+}
+
+.breadcrumb {
+  clear: both;
+  padding: 1.5em 0 0;
+  display: none;
+}
+
+#skip-link {
+  position: absolute;
+}
+
+/* Menus and Item lists */
+
+.item-list ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+.item-list ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.inline {
+  clear: both;
+}
+
+ul.inline li {
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+
+/* Admin tabs */
+
+.tabs-wrapper {
+  border-bottom: 1px solid #333;
+  margin: 0 0 1.4375em;
+}
+
+ul.primary {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.primary li a {
+  background: none;
+  border: none;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 1em;
+}
+
+ul.primary li a:hover, ul.primary li a.active {
+  background: #666;
+  border: none;
+  color: #fff;
+}
+
+ul.primary li a:hover {
+  background: #888;
+  text-decoration: none;
+}
+
+ul.secondary {
+  background: #666;
+  border-bottom: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+ul.secondary li {
+  border-right: none;
+}
+
+ul.secondary li a, ul.secondary li a:link {
+  border: none;
+  color: #ccc;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  padding: 0 1em;
+}
+
+ul.secondary li a:hover, ul.secondary li a.active {
+  background: #888;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.secondary a.active {
+  border-bottom: none;
+}
+
+/**
+ * 7.NODES
+ */
+
+.node {
+  margin-bottom: 1.5em;
+}
+
+/* tags */
+
+.field-name-field-tags {
+  margin: 0 0 1.5em;
+}
+
+.field-name-field-tags .field-item {
+  margin: 0 1em 0 0;
+}
+
+.field-name-field-tags div {
+  display: inline;
+}
+
+/* profile */
+
+.profile {
+  margin: 1.5em 0;
+}
+
+.profile h3 {
+  border: none;
+}
+
+.profile dt {
+  margin-bottom: 0;
+}
+
+.profile dd {
+  margin-bottom: 1.5em;
+}
+
+.password-parent {
+  width: 36em;
+}
+
+/**
+ * 8.COMMENTS
+ */
+
+#comments {
+  clear: both;
+  margin-top: 1.5em;
+}
+
+.comment {
+  margin-bottom: 1.5em;
+}
+
+.comment .new {
+  color: red;
+  text-transform: capitalize;
+  margin-left: 1em;
+}
+
+/**
+ * 9.BLOCKS
+ */
+
+.block {
+  margin-bottom: 1.5em;
+}
+
+/**
+ * 10.FOOTER
+ */
+
+#footer {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo_footer.png") 98% 36% no-repeat;
+  clear: both;
+  padding-top: 15px;
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+#block-bean-footer-men {
+  width: 50%;
+  float: left;
+}
+
+#block-bean-footer-men ul {
+  padding-left: 0;
+}
+
+#block-bean-footer-men ul li {
+  list-style-image: none;
+  list-style-type: none;
+  float: left;
+}
+
+#block-bean-footer-men ul li a {
+  display: block;
+  margin-right: 18px;
+  color: #ececec;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#block-bean-footer-men ul li a.active,
+#block-bean-footer-men ul li a:hover {
+  color: #fae708;
+}
+
+#block-bean-footer-men ul li.last a {
+  margin-right: 0;
+}
+
+
+#block-bean-footer-datos-de-contacto {
+  float: right;
+  margin-right: 160px;
+  text-align: right;
+  font-size: 16px;
+  padding-top: 24px;
+}
+
+#block-bean-footer-datos-de-contacto p {
+  margin-bottom: 0;
+}
+
+#block-bean-footer-copyrigth {
+  width: 86.5%;
+  float: left;
+  border-top: 2px solid #6a6a6a;
+  font-size: 12.5px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+#block-bean-footer-copyrigth strong,
+#block-bean-footer-copyrigth a {
+  font-weight: bold;
+}
+
+#footer a.feed-icon {
+  position: absolute;
+  right: 0;
+  top: 1.6667em;
+}
+
+/**
+ * 11.CSS SUPPORT
+ *
+ * Built-in classes:
+ * .clearfix                            | contain floats
+ * .element-invisible                   | hide element visually
+ * .element-invisible.element-focusable | allow element to be focusable when navigated to via keyboard
+ * .element-hidden                      | hide visually and from screenreaders
+ */
+ 
+ .hide {
+   visibility: hidden;
+ }
+ 
+/* clear floats */
+.clear { clear: both; }
+
+/* display block */
+.display-block { display: block; }
+
+
+/**
+ * 12.Slideshow Home
+ */
+ 
+.view-slide-home {
+  position: relative;*/
+}
+
+.banner-texto {
+  position: absolute;
+  bottom: 122px;
+  padding: 40px 65px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-titulo1, .banner-titulo2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1em;
+}
+
+.banner-titulo1 {
+  color: white
+}
+
+.banner-titulo2 {
+  color: #fae708;
+}
+
+.banner-titulo3 {
+  color: #000;
+  background: #e60008;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.views-slideshow-controls-bottom {
+  width: 250px;
+  float: right;
+  position: relative;
+  margin-top: -60px;
+  z-index: 10;
+}
+
+.views-slideshow-pager-field-item {
+  float: left;
+  margin-left: 12px;
+}
+
+.views-slideshow-pager-field-item .views-content-nothing {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f6e708;
+  text-indent: -9999px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+#widget_pager_bottom_slide_home-default {
+  float: right;
+  margin-right: 55px;
+}
+
+.views-slideshow-pager-field-item.active .views-content-nothing {
+  background: #e60008;
+}
+
+/*
+ * 13. Home Novedades, Planes, Canales 
+ */
+
+.pane-novedades-home {
+  width: 66.6%;
+  float: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pane-planes-home {
+  width: 380px;
+  float: right;
+}
+
+.view-galeria-imagenes .view-content {
+  width: 1181px;
+  overflow: hidden;
+}
+
+.pane-novedades-home .views-row-1,
+.pane-novedades-home .views-row-2 {
+  width: 380px;
+  float: left;
+  height: 358px;
+  background: #343737;
+  overflow: hidden;
+}
+
+.pane-novedades-home .views-row-1 {
+  margin-right: 20px;
+}
+
+.view-novedades-home .view-header {
+  float: left;
+}
+
+.view-novedades-home .view-header a {
+  position: absolute;
+  right: 5px;
+  top: 35px;
+  color: #343737;
+  font-size: 20px;
+}
+
+/* Logged In */
+.logged-in .view-novedades-home .view-header a {
+  top: -50px;
+}
+
+.novedades-texto {
+  padding: 8px 25px 0px 25px;
+  color: white;
+  height: 105px;
+  overflow: hidden;
+}
+
+.novedades-tag, .novedades-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  clear: both;
+  float: left;
+}
+
+.novedades-tag {
+  color: #fae708;
+  font-size: 15px;
+}
+
+.novedades-title {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.novedades-title a {
+  color: white;
+}
+
+.novedades-body {
+  float: left;
+  clear: both;
+  font-size: 13px;
+  max-height: 55px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.novedades-body p {
+  line-height: 1.4;
+}
+
+.pane-planes-home .views-row {
+  width: 380px;
+  height: 358px;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+
+.precio {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  background: #e60008;
+  color: white;
+}
+
+.moneda {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 10px;
+  float: left;
+}
+
+.monto {
+  font-size: 52px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro';
+  float: left;
+  margin-top: -15px;
+}
+
+.por-mes {
+  float: left;
+  margin-top: -20px;
+  text-align: center;
+  width: 100%;
+}
+
+.group-gris {
+  background: #343737;
+  min-width:300px;
+  padding: 0 25px;
+  height: 70px;
+  float: left;
+  margin-top: -42px;
+  position: relative;
+}
+
+.group-gris h3 {
+  display: none;
+}
+
+.group-gris h2 {
+  margin-top: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1em;
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.group-gris .field-name-field-subtitulo {
+  color: #fae708;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.field-name-field-caracteristicas ul {
+  margin-top: 10px;
+  margin-right: 0;
+  padding-left: 25px;
+  float: left;
+  list-style-type: none;
+}
+
+.field-name-field-caracteristicas li {
+  float: left;
+  padding-left: 20px;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 8px no-repeat;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.1em;
+}
+
+/* 
+ * Pane Canales Home
+ */
+ 
+.pane-canales-home {
+  width: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-canales-home .view-header {
+  float: left;
+}
+
+.view-canales-home .view-header p {
+  margin-bottom: 0;
+}
+
+.view-canales-home .view-header a {
+  position: absolute;
+  right: 5px;
+  top: 35px;
+  color: #343737;
+  font-size: 20px;
+}
+
+.views-field-edit-term a {
+  font-size: 11px;
+  background: #E5E5E5;
+  border-radius: 3px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  padding: 2px 8px;
+  line-height: 1.2em; 
+}
+
+.views-field-edit-term a:hover {
+  background: #FAE708;
+}
+
+/* 
+ * Carrousel Home 
+ * */
+
+.front .jcarousel-skin-default .jcarousel-container-horizontal {
+  margin-left: -10px;
+  margin-top: 0;
+  height: 180px;
+}
+
+.front .jcarousel-skin-default .jcarousel-clip-horizontal,
+.front .jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 1190px;
+  padding: 0;
+}
+
+.front .jcarousel-skin-default .jcarousel-item {
+  width: 180px;
+  height: 180px;
+  border: 0;
+  margin: 0 10px;
+}
+
+.front .jcarousel-skin-default .jcarousel-next, .front .jcarousel-skin-default .jcarousel-prev {
+  display: none;
+}
+
+/* Logged In */
+.logged-in .view-canales-home .view-header a {
+  top: -50px;
+}
+
+.pane-canales-home .views-row {
+  float: left;
+  margin-right: 20px;
+}
+
+.pane-canales-home .views-row.views-row-last {
+  margin-right: 0;
+}
+
+/* Pages */
+
+#page-title {
+  margin-top: 0;
+  font-size: 54px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+.node-type-page .group-header,
+.page-contacto .panel-col-top {
+  font-size: 21px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.node-type-page .group-header p {
+  margin-bottom: 0;
+}
+
+.node-type-page .group-left {
+  font-size: 19px;
+  width: 750px;
+  float: left;
+}
+
+.node-type-page .group-right {
+  width: 380px;
+  float: right;
+}
+
+.node-type-page .group-left h2:first-child {
+  float: left;
+  margin-top: 0;
+  margin-right: 10px;
+  width: 233px;
+  height: 40px;
+  background: #e60008;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.7;
+  font-weight: bold;
+  font-size: 23.17px;
+}
+
+/* Galleries Pages */
+
+.node-type-page .jcarousel-skin-default .jcarousel-container-horizontal {
+  margin-left: -6px;
+  margin-top: 0;
+  height: 288px;
+}
+
+.node-type-page .jcarousel-skin-default .jcarousel-clip-horizontal,
+.node-type-page .jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 1190px;
+  padding: 0;
+}
+
+.node-type-page .jcarousel-skin-default .jcarousel-item {
+  width: 280px;
+  height: 280px;
+  border: 4px solid #ececec;
+  margin: 0 5px;
+}
+
+.node-type-page .jcarousel-skin-default .jcarousel-item:hover {
+  border: 4px solid #fae708;
+}
+
+.node-type-page.page-node-6 .group-footer {
+  float: left;
+  width: 100%;
+  height: 362px;
+}
+
+.node-type-page .group-footer .jcarousel-skin-default .jcarousel-next-horizontal,
+.node-type-page .group-footer .jcarousel-skin-default .jcarousel-prev-horizontal {
+  position: absolute;
+  top: 4px;
+  width: 70px;
+  height: 280px;
+  background-color: rgba(0,0,0,0.6);
+  background-image: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-gallery.png");
+  background-repeat: no-repeat;
+  background-position: 18px 50%;
+}
+
+.node-type-page .group-footer .jcarousel-skin-default .jcarousel-prev-horizontal {
+  left: 5px;
+}
+
+.node-type-page .group-footer .jcarousel-skin-default .jcarousel-next-horizontal {
+  right: 0px;
+  background-position: 106% 50%;
+}
+
+/* PopUp Gallery */
+
+#cboxWrapper {
+  border-radius: 0;
+}
+
+#cboxContent, #cboxLoadedContent {
+  margin-bottom: -28px !important;
+}
+
+#cboxTopLeft, #cboxTopRight {
+  width: 10px;
+  height: 10px;
+}
+
+#cboxMiddleLeft, #cboxMiddleRight {
+  width: 10px;
+}
+
+#cboxTopCenter {
+  height: 10px;
+}
+
+#cboxTitle {
+  background: rgba(0, 0, 0, 0.5);
+  height: 85px !important;
+  padding: 20px 90px !important;
+  color: #ffffff;
+  display: block !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 0px !important;
+  line-height: 1.2;
+}
+
+#cboxTitle span {
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: none;
+  float: left;
+  width: 100%;
+}
+
+#cboxPrevious, #cboxPrevious:hover {
+  background-image: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-full-gallery.png");
+  background-position: left top;
+  height: 38px;
+  width: 30px;
+  left: 25px;
+  bottom: 22px;
+}
+
+#cboxNext, #cboxNext:hover {
+  background-image: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-full-gallery.png");
+  background-position: right top;
+  height: 38px;
+  width: 30px;
+  right: 25px;
+  left: auto;
+  bottom: 22px;
+}
+
+#cboxCurrent {
+  position: absolute;
+  bottom: 20px;
+  left: auto;
+  color: #ffffff;
+  right: 100px;
+  font-size: 18px;
+}
+
+#cboxClose {
+  display: none;
+}
+
+
+/* 
+ * 15. Servicios 
+ * */
+ 
+.page-node-7 .group-left {
+  margin-bottom: 100px;
+  margin-top: -45px;
+}
+
+.page-node-7 .group-left p {
+  font-size: 15px;
+  width: 670px;
+  margin-bottom: 0;
+}
+
+.page-node-7 .group-left h4 {
+  font-size: 30px;
+}
+
+.page-node-7 .group-left ul li {
+  font-size: 15px;
+  max-width: 670px;
+}
+
+.servicio-tv h3, .servicio-inet h3, .servicio-tel h3 {
+  font-size: 37px;
+  margin-top: 10px;
+}
+
+.servicio-tv {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-tv.png") no-repeat right 0;
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.servicio-inet {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-inet.png") no-repeat right 0;
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.servicio-tel {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-tel.png") no-repeat right 0;
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+/* Bloque Reclamos */
+#block-bean-consultas-y-reclamos--2 {
+  margin-top: 10px;
+  padding: 30px 10px;
+  font-size: 22px;
+  float: left;
+}
+
+#block-bean-consultas-y-reclamos--2 p {
+  margin-bottom: 0;
+}
+
+#block-bean-consultas-y-reclamos--2 h3 {
+  font-size: 40px;
+  color: #f50008;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#block-bean-consultas-y-reclamos--2 a {
+  color: #f50008;
+  font-weight: bold;
+}
+
+/* Bloque AFIP */
+
+#block-bean-afip-carpeta-pblico--2 {
+  margin-top: 0px;
+  padding: 0px 0px;
+  font-size: 19px;
+  float: left;
+  width: 100%;
+}
+
+#block-bean-afip-carpeta-pblico--2 .fiscal {
+  width:137px;
+  height: 120px;
+  float: left;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/afip.png") no-repeat;
+  text-indent: -9999px;
+}
+
+#block-bean-afip-carpeta-pblico--2 .adjunto {
+  width: 226px;
+  height: 120px;
+  float: right;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/icono_adjuntos.png") 17px 30px no-repeat #fff;
+}
+
+#block-bean-afip-carpeta-pblico--2 .adjunto h4 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #000000;
+  margin-top: 25px;
+  line-height: 1.2;
+  margin-left: 72px;
+}
+
+#block-bean-afip-carpeta-pblico--2 .adjunto a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e60008;
+  margin-left: 72px;
+}
+
+/* Mapa */
+
+#map-canvas {
+  height: 800px;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 3px solid #999999;
+}
+
+.pane-block-5 h2.pane-title {
+  font-size: 37px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-left: 0;
+  background: none;
+  float: left;
+}
+
+/* Only admin */
+.admin-role  .pane-block-5  h2.pane-title {
+  float: none;
+}
+
+.admin-role .service-cable {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.service-cable, .service-wifi {
+  float: left;
+  margin-left: 45px; 
+  margin-top: 5px;
+}
+
+.service-cable div, .service-wifi div {
+  background: #3e4d9a;
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin-right: 10px;
+}
+
+.service-wifi div {
+  background: #fae708;
+}
+
+
+.block.block-views {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 
+ * 16. Planes 
+ */
+
+.page-planes .pane-block-2,
+.page-canales .pane-block-1 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.view-planes-lista .views-row {
+  margin-bottom: 40px;
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+
+.view-planes-lista .views-row .col1 {
+  float: left;
+  width: 480px;
+  overflow: hidden;
+}
+
+.view-planes-lista .views-row .col1 img {
+  height: auto;
+}
+
+.view-planes-lista .views-row .precio {
+  height: 138px;
+  width: 190px;
+  bottom: 0;
+  top: auto;
+}
+
+.view-planes-lista .views-row .precio .monto {
+  font-size: 81px;
+}
+
+.view-planes-lista .views-row .precio .moneda {
+  font-size: 39px;
+  margin-top: 15px;
+}
+
+.view-planes-lista .views-row .precio .por-mes {
+  font-size: 25px;
+  margin-top: -30px;
+  margin-left: -7px;
+}
+
+.view-planes-lista .views-row .col2 {
+  float: left;
+}
+
+.view-planes-lista .group-gris {
+  margin-top: 42px;
+  margin-left: -20px;
+  width: 440px;
+  height: 112px;
+  padding: 0 40px;
+}
+
+.view-planes-lista .group-gris h2 {
+  margin-top: 15px;
+  font-size: 48px;
+  float: left;
+  width: 100%;
+}
+
+.view-planes-lista .group-gris .field-name-field-subtitulo {
+  font-size: 31px;
+}
+
+.view-planes-lista .caract-precio ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  float: left;
+  list-style-type: none;
+}
+
+.view-planes-lista .caract-precio ul li {
+  float: left;
+  clear: both;
+  padding-left: 25px;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li_planes.png") 0px 12px no-repeat;
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #000;
+}
+
+.view-planes-lista .icono {
+  float: right;
+}
+}
+
+#edit-tec-analogico a, #edit-tec-digital a {
+  width: 380px;
+  height: 90px;
+  float: left;
+  margin-right: 20px;
+  background: #cccccc;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 39px;
+  line-height: 2.4em;
+}
+
+#edit-tec-analogico a.active, #edit-tec-digital a.active {
+  background: #e60008;
+  color: #ffffff;
+}
+
+#edit-cat-wrapper {
+  padding: 0;
+  float: right;
+  width: 380px;
+}
+
+#edit-cat-wrapper label {
+  font-size: 19px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+#edit-cat {
+  border: 0;
+}
+
+#edit-hd-wrapper {
+  float: right;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+#edit-hd-wrapper label {
+  font-weight: normal;
+}
+
+.title-grilla {
+  font-size: 35px;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
+  padding-left: 40px;
+  margin-top: -45px;
+  margin-bottom: 20px;
+  color: #444848;
+}
+
+.view-canales-lista .views-row {
+  float: left;
+  width: 376px;
+  height: 166px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 2px solid #cccccc;
+  background: #f6f6f6;
+  position: relative;
+}
+
+.view-canales-lista .views-row-3, .view-canales-lista .views-row-6, .view-canales-lista .views-row-9,
+.view-canales-lista .views-row-12, .view-canales-lista .views-row-15, .view-canales-lista .views-row-18,
+.view-canales-lista .views-row-21, .view-canales-lista .views-row-24, .view-canales-lista .views-row-27,
+.view-canales-lista .views-row-30, .view-canales-lista .views-row-33, .view-canales-lista .views-row-36,
+.view-canales-lista .views-row-39, .view-canales-lista .views-row-42,  .view-canales-lista .views-row-45,
+.view-canales-lista .views-row-48, .view-canales-lista .views-row-51,  .view-canales-lista .views-row-54,
+.view-canales-lista .views-row-57, .view-canales-lista .views-row-60,  .view-canales-lista .views-row-63,
+.view-canales-lista .views-row-66, .view-canales-lista .views-row-69,  .view-canales-lista .views-row-72,
+.view-canales-lista .views-row-75, .view-canales-lista .views-row-78,  .view-canales-lista .views-row-81,
+.view-canales-lista .views-row-84, .view-canales-lista .views-row-87,  .view-canales-lista .views-row-90,
+.view-canales-lista .views-row-93, .view-canales-lista .views-row-96,  .view-canales-lista .views-row-99 {
+  margin-right: 0;
+}
+
+.view-canales-lista .views-row .col1,
+.view-canales-lista .views-row .col2 {
+  width: 50%;
+  float: left;
+}
+
+.view-canales-lista .views-row img {
+  width: 166px;
+  height: auto;
+  float: left;
+}
+
+.grupo-hd-frec {
+  min-width: 68px;
+  padding: 0 5px;
+  height: 50px;
+  float: right;
+  background: #e60008;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: 'Droid Sans';
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.grupo-hd-frec a {
+  color: #ffffff; 
+}
+
+.view-canales-lista .views-row .col2 .nombre,
+.view-canales-lista .views-row .col2 .categorias {
+  padding-left: 10px;
+  float: left;
+}
+
+.view-canales-lista .views-row .col2 .nombre {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 1em;
+}
+
+.view-canales-lista .views-row .col2 .categorias {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-top: 5px;
+  width: 85%;
+}
+
+.hd-is-0 {
+  display: none;
+}
+
+.hd-is-1 {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/icon_hd.png") no-repeat;
+  width: 42px;
+  height: 35px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-indent: -9999px;
+}
+
+/* Jquery select box */
+
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: #444848;
+	border: 0;
+	font-size: 19px;
+	font-family: "Droid Sans";
+	font-weight: normal;
+	text-transform: uppercase;
+	height: 45px;
+	position: relative;
+	width: 380px;
+	margin-top: 6px;
+}
+
+.sbHolder:focus,
+.sbHolder:focus .sbSelector{
+	border: 0;
+}
+
+.sbSelector{
+	display: block;
+	height: 45px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 8px;
+	width: 100%;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow_select.png) 0 -70px no-repeat;
+	display: block;
+	height: 45px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	opacity: 0.9;
+
+/* 
+ * 17. Canales 
+ * */
+
+#edit-tec-wrapper {
+  padding: 0;
+}
+
+.form-item-tec div {
+  display: inline;
+  padding: 0;
+}
+.sbToggleOpen{
+	background: url(http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow_select.png) 0 15px no-repeat;
+}
+
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #444848;
+	border: 0;
+	list-style: none;
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #ddd;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #EBB52D;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
+
+/* 
+ * 18. Novedades Lista
+ * */
+
+.page-novedades #page-title {
+  margin-bottom: 12px;
+}
+
+.view-novedades-lista .views-row {
+  width: 580px;
+  height: 580px;
+  float: left;
+  background: #343737;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.view-novedades-lista .views-row-odd {
+  margin-right: 20px;
+  float: left;
+}
+
+.lista-content-novedades {
+  padding: 15px 38px;
+  color: #ffffff;
+}
+
+.lista-content-novedades .novedades-tag {
+  font-size: 20px;
+}
+
+.lista-content-novedades .novedades-title {
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.lista-content-novedades .novedades-body {
+  font-size: 16px;
+  max-height: 65px;
+  margin-top: 5px;
+}
+
+.leer-mas {
+  position: absolute;
+  right: 38px;
+  bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.leer-mas a {
+  color: #fae708;
+}
+
+/* 
+ * Novedades Full
+ * */
+
+.node-type-article #page-title {
+  margin-bottom: -12px;
+}
+
+.mas-novedades-full {
+  float: right;
+  color: #343737 !important;
+  font-size: 20px;
+  margin-top: -56px;
+  margin-right: 20px; 
+}
+
+.node-type-article .group-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.group-titulo-categoria {
+  width: 704px;
+  padding: 20px 38px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 95px;
+}
+
+.group-titulo-categoria .field-name-field-tags {
+  float: left;
+  color: #fae708;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.group-titulo-categoria .field-name-post-date {
+  font-size: 18px;
+  color: #dcdcdc;
+  float: right;
+  font-weight: bold;
+}
+
+.group-titulo-categoria .field-name-title h2 {
+  color: #ffffff;
+  float: left;
+  width: 100%;
+  font-size: 47px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.node-type-article .group-one-column .group-left {
+  width: 100%;
+}
+
+.node-type-article .group-left {
+  width: 680px;
+  float: left;
+}
+
+.node-type-article .group-right {
+  width: 480px;
+  float: right;
+}
+
+.node-type-article .group-left img {
+  width: 100%;
+  height: auto;
+}
+
+.node-type-article .group-right iframe {
+  width: 100%;
+  height: 278px;
+}
+
+.view-archivos-adjuntos {
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/file_adjunto.png") no-repeat 20px 20px #fff;
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+
+.view-archivos-adjuntos .view-content {
+  padding: 0px 20px 20px 116px;
+}
+
+.view-archivos-adjuntos h2 {
+  font-size: 21px;
+  font-weight: normal;
+  margin-top: 0;
+  padding: 20px 20px 10px 116px;
+}
+
+.view-archivos-adjuntos .file img {
+  display: none;
+}
+
+.view-archivos-adjuntos .file a {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.view-archivos-adjuntos .views-field-field-adjuntos-1 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* 
+ * 19. Contacto 
+ * */
+
+.page-contacto .panel-2col-stacked .panel-col-first {
+  width: 680px;
+}
+
+.page-contacto .panel-2col-stacked .panel-col-last {
+  width: 480px;
+}
+
+.page-contacto .panel-col-top {
+  margin-bottom: 20px;
+}
+
+.page-contacto .panel-col-top p {
+  margin-bottom: 0;
+}
+
+.page-contacto h2.pane-title {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#webform-client-form-5 .form-item {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#webform-client-form-5 .form-item label {
+  width: 194px;
+  float: left;
+  margin-top: 12px;
+  margin-right: 0;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+#webform-client-form-5 .form-item input {
+  float: right;
+  width: 455px;
+  padding-left: 5px;
+  border: 2px solid #cccccc;
+  height: 42px;
+  font-size: 20px;
+}
+
+#webform-client-form-5 .sbHolder {
+  float: right;
+  width: 462px;
+}
+
+#webform-client-form-5 .form-item textarea {
+  float: right;
+  width: 463px;
+  border: 2px solid #cccccc;
+  min-height: 280px;
+}
+
+#webform-client-form-5 input[type="submit"] {
+  width: 140px;
+  height: 60px;
+  background: #cccccc;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  border: 0;
+  margin-left: 210px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#webform-client-form-5 input[type="submit"]:hover {
+  background: #e60008;
+  color: #ffffff;
+}
+
+.page-contacto .messages {
+  float: left;
+  width: 92%;
+}
+
+.page-contacto .panel-2col-stacked .panel-col-last {
+  color: #000;
+  font-size: 20px;
+}
+
+.page-contacto .panel-2col-stacked .panel-col-last .pane-content {
+  margin-top: 80px;
+}
+
+.page-contacto .panel-2col-stacked .panel-col-last .pane-content p {
+  margin-bottom: 10px;
+}
+
+.page-contacto .contact-left,
+.page-contacto .contact-right {
+  width: 50%;
+  float: left;
+}
+
+.page-contacto .contact-right strong {
+  font-size: 34px;
+  color: #f50008;
+}
+
+.page-contacto #map-canvas {
+  height: 440px;
+  border: 2px solid #cccccc;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* 
+ * 21. Search Page
+ * */
+
+.page-search .pane-custom.pane-1 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 0px;
+}
+
+.page-search .pane-custom.pane-1 p {
+  margin-bottom: 0;
+}
+
+.page-search input[type="search"] {
+  border: 2px solid #cccccc;
+  height: 43px;
+  width: 60%;
+  padding-left:5px;
+  font-size: 20px;
+}
+
+.page-search input[type="submit"] {
+  width: 140px;
+  height: 60px;
+  background: #cccccc;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  border: 0;
+  margin-left: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.page-search input[type="submit"]:hover {
+  background: #e60008;
+  color: #ffffff;
+}
+
+#search-block-form .element-invisible {
+  display: none;
+}
+
+ol.search-results {
+  padding-left: 0;
+}
+
+ol.search-results h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+ol.search-results li {
+  border-bottom: 2px solid #cccccc;
+}
+
+ol.search-results li:last-child {
+  border-bottom: 0;
+}
+
+.search-info {
+  display: none;
+}
+
+/* 404 */
+.page-node-20.node-type-page .group-right {
+  margin-top: -100px;
+} 
+
+.page-node-20.node-type-page .group-header {
+  margin-bottom: 10px;
+}
+
+/* 
+ * 21. Responsive 
+ * */
+
+@media only screen and (max-width: 1252px)  { 
+  
+  #header-inner {
+    padding: 26px 0 20px;
+  }
+  
+  #main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+/*
+@media only screen and (max-width: 1252px)  { 
+  #content {
+    padding-bottom: 1px;
+  }
+  
+  .front #frame {
+    width: 1024px;
+    background-size: 100%;
+  }
+  
+  #main {
+    background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    margin-bottom: 40px;
+    background-size: 100%;
+  }
+  
+  #header, #main, .pane-slide-home, .pane-slide-home img {
+    width: 952px;
+  }
+  
+  #navigation ul#main-menu li {
+    padding-left: 20px;
+  }
+  
+  #block-bean-footer-men ul li a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  
+  .pane-slide-home img {
+    height:auto;
+  }
+  
+  .panel-1col .panel-col {
+    width: 952px;
+  }
+  
+  .pane-novedades-home .views-row-1, .pane-novedades-home .views-row-2 {
+    width: 304px;
+  }
+  
+  .pane-planes-home, .pane-planes-home .views-row {
+    width: 304px;
+  }
+  
+  #footer {
+    max-width: 960px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px)  { 
+  #content {
+    padding-bottom: 1px;
+  }
+  
+  .front #frame {
+    width: 960px;
+    background-size: 100%;
+  }
+  
+  #main {
+    background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    margin-bottom: 40px;
+    background-size: 100%;
+  }
+  
+  #header, #main, .pane-slide-home, .pane-slide-home img {
+    width: 888px;
+  }
+  
+  #navigation ul#main-menu li {
+    padding-left: 20px;
+  }
+  
+  #navigation ul#main-menu li a {
+    font-size: 15px;
+  }
+  
+  #block-bean-footer-men ul li a {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  
+  .pane-slide-home img {
+    height:auto;
+  }
+  
+  .panel-1col .panel-col {
+    width: 888px;
+  }
+  
+  .pane-novedades-home .views-row-1, .pane-novedades-home .views-row-2 {
+    width: 283px;
+  }
+  
+  .pane-planes-home, .pane-planes-home .views-row {
+    width: 283px;
+  }
+  
+  #footer {
+    max-width: 960px;
+  }
+
+}
+
+
+@media only screen and (max-width: 960px)  {
+
+  .front #frame {
+    width: 768px;
+    background-size: 100%;
+  } 
+  
+  #main {
+    background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    margin-bottom: 40px;
+    background-size: 100%;
+  }
+  
+  #header, #main, .pane-slide-home, .pane-slide-home img {
+    width: 696px;
+  }
+ 
+  
+   .panel-1col .panel-col {
+    width: 696px;
+  }
+  
+  .pane-novedades-home {
+    width: 100%;
+  }
+  
+  .pane-novedades-home .views-row-1, .pane-novedades-home .views-row-2 {
+    width: 337px;
+  }
+  
+  .pane-planes-home {
+    width: 100%;
+  } 
+  
+  .pane-planes-home .views-row {
+    width: 337px;
+    float: none;
+    margin: auto;
+  }
+  
+   
+  #footer {
+    max-width: 696px;
+  }
+  
+}
+*/
