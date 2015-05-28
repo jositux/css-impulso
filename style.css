@@ -973,6 +973,7 @@ ul.secondary a.active {
 .field-name-field-caracteristicas li {
   float: left;
   padding-left: 15px;
+  clear: both;
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 6px no-repeat;
   font-size: 16px;
   color: #000;
