@@ -942,11 +942,11 @@ ul.secondary a.active {
 }
 
 .group-gris h2 {
-  margin-top: 5px;
+  margin-top: 8px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1em;
   float: left;
   clear: both;
@@ -958,7 +958,7 @@ ul.secondary a.active {
   color: #fae708;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .field-name-field-caracteristicas ul {
@@ -973,9 +973,9 @@ ul.secondary a.active {
   float: left;
   padding-left: 20px;
   background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 8px no-repeat;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 /* 
