@@ -913,11 +913,11 @@ ul.secondary a.active {
 }
 
 .monto {
-  font-size: 52px;
+  font-size: 48px;
   font-weight: bold;
   font-family: 'Source Sans Pro';
   float: left;
-  margin-top: -15px;
+  margin-top: -11px;
 }
 
 .por-mes {
@@ -972,7 +972,7 @@ ul.secondary a.active {
 .field-name-field-caracteristicas li {
   float: left;
   padding-left: 20px;
-  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 8px no-repeat;
+  background: url("http://www.site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 6px no-repeat;
   font-size: 16px;
   color: #000;
   line-height: 1.2em;
