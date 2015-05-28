@@ -58,7 +58,7 @@ Equation for font sizing:
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
 body {
-  background-color: red;
+  background-color: #1a1a1a;
   color: #333333;
   font-family: "Raleway", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 100%;
