@@ -92,7 +92,7 @@ h2, .h2 {
 
 h2.pane-title, .view-galeria-imagenes h2.title {
   font-size: 35px;
-  background: url("images/tri_rojo.png") 0px no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
   padding-left: 40px;
   margin-top: 28px;
   margin-bottom: 15px;
@@ -159,18 +159,18 @@ strong { font-weight: bold; }
 #frame {
   width: 100%;
   margin: auto;
-  background: url("images/marco_contenidos.png") top center no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos.png") top center no-repeat;
   background-position: top center;
   padding-top: 36px;
   padding-bottom: 40px;
 }
 
 .front #frame {
-  background: url("images/marco_contenidos.png") top center no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos.png") top center no-repeat;
 }
 
 .not-front #frame {
-  background: url("images/marco_contenidos_internas.png") top center no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/marco_contenidos_internas.png") top center no-repeat;
 }
 
 #content {
@@ -203,7 +203,7 @@ strong { font-weight: bold; }
 #main {
   display: inline;
   margin: 0;
-  background: url(images/pattern.png) no-repeat 36px bottom #ececec;
+  background: url(http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png) no-repeat 36px bottom #ececec;
   display: table;
   width: 1180px;
   padding: 36px;
@@ -213,7 +213,7 @@ strong { font-weight: bold; }
 
 .not-front #main {
   padding-top: 15px;
-  background: url(images/pattern.png) no-repeat 36px bottom #ececec;
+  background: url(http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png) no-repeat 36px bottom #ececec;
 }
 
 /* 3 columns */
@@ -321,13 +321,13 @@ body.sidebar-second #sidebar-second {
 #header #logo {
   float: left;
   margin: 0 1em 0em 0;
-  background: url("images/logo.png") no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo.png") no-repeat;
   width: 270px;
   height: 80px;
 }
 
 #header.fixed #logo {
-  background: url("images/logo_mini.png") no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo_mini.png") no-repeat;
   width: 253px;
   height: 64px;
   margin-top: -26px;
@@ -379,7 +379,7 @@ body.sidebar-second #sidebar-second {
   width:265px;
   height: 32px;
   color: #ffffff;
-  background: url("images/search.png") no-repeat 5px 8px #444848;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/search.png") no-repeat 5px 8px #444848;
   border: 0;
 }
 
@@ -623,7 +623,7 @@ ul.secondary a.active {
  */
 
 #footer {
-  background: url("images/logo_footer.png") 98% 36% no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo_footer.png") 98% 36% no-repeat;
   clear: both;
   padding-top: 15px;
   position: relative;
@@ -973,7 +973,7 @@ ul.secondary a.active {
 .field-name-field-caracteristicas li {
   float: left;
   padding-left: 20px;
-  background: url("images/li.png") 0px 6px no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 6px no-repeat;
   font-size: 16px;
   color: #000;
   line-height: 1.2em;
@@ -1148,7 +1148,7 @@ ul.secondary a.active {
   width: 70px;
   height: 280px;
   background-color: rgba(0,0,0,0.6);
-  background-image: url("images/arrow-gallery.png");
+  background-image: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-gallery.png");
   background-repeat: no-repeat;
   background-position: 18px 50%;
 }
@@ -1207,7 +1207,7 @@ ul.secondary a.active {
 }
 
 #cboxPrevious, #cboxPrevious:hover {
-  background-image: url("images/arrow-full-gallery.png");
+  background-image: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-full-gallery.png");
   background-position: left top;
   height: 38px;
   width: 30px;
@@ -1216,7 +1216,7 @@ ul.secondary a.active {
 }
 
 #cboxNext, #cboxNext:hover {
-  background-image: url("images/arrow-full-gallery.png");
+  background-image: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow-full-gallery.png");
   background-position: right top;
   height: 38px;
   width: 30px;
@@ -1269,21 +1269,21 @@ ul.secondary a.active {
 }
 
 .servicio-tv {
-  background: url("images/banderines-tv.png") no-repeat right 0;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-tv.png") no-repeat right 0;
   width: 100%;
   float: left;
   margin-bottom: 40px;
 }
 
 .servicio-inet {
-  background: url("images/banderines-inet.png") no-repeat right 0;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-inet.png") no-repeat right 0;
   width: 100%;
   float: left;
   margin-bottom: 40px;
 }
 
 .servicio-tel {
-  background: url("images/banderines-tel.png") no-repeat right 0;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/banderines-tel.png") no-repeat right 0;
   width: 100%;
   float: left;
   margin-bottom: 40px;
@@ -1327,7 +1327,7 @@ ul.secondary a.active {
   width:137px;
   height: 120px;
   float: left;
-  background: url("images/afip.png") no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/afip.png") no-repeat;
   text-indent: -9999px;
 }
 
@@ -1335,7 +1335,7 @@ ul.secondary a.active {
   width: 226px;
   height: 120px;
   float: right;
-  background: url("images/icono_adjuntos.png") 17px 30px no-repeat #fff;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/icono_adjuntos.png") 17px 30px no-repeat #fff;
 }
 
 #block-bean-afip-carpeta-pblico--2 .adjunto h4 {
@@ -1493,7 +1493,7 @@ ul.secondary a.active {
   float: left;
   clear: both;
   padding-left: 25px;
-  background: url("images/li_planes.png") 0px 12px no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li_planes.png") 0px 12px no-repeat;
   font-size: 25px;
   line-height: 1.1em;
   color: #000;
@@ -1563,7 +1563,7 @@ ul.secondary a.active {
 
 .title-grilla {
   font-size: 35px;
-  background: url("images/tri_rojo.png") 0px no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
   padding-left: 40px;
   margin-top: -45px;
   margin-bottom: 20px;
@@ -1653,7 +1653,7 @@ ul.secondary a.active {
 }
 
 .hd-is-1 {
-  background: url("images/icon_hd.png") no-repeat;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/icon_hd.png") no-repeat;
   width: 42px;
   height: 35px;
   float: left;
@@ -1700,7 +1700,7 @@ ul.secondary a.active {
 	text-decoration: none;
 }
 .sbToggle{
-	background: url(images/arrow_select.png) 0 -70px no-repeat;
+	background: url(http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow_select.png) 0 -70px no-repeat;
 	display: block;
 	height: 45px;
 	outline: none;
@@ -1713,7 +1713,7 @@ ul.secondary a.active {
 	opacity: 0.9;
 }
 .sbToggleOpen{
-	background: url(images/arrow_select.png) 0 15px no-repeat;
+	background: url(http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/arrow_select.png) 0 15px no-repeat;
 }
 
 .sbHolderDisabled{
@@ -1911,7 +1911,7 @@ ul.secondary a.active {
 }
 
 .view-archivos-adjuntos {
-  background: url("images/file_adjunto.png") no-repeat 20px 20px #fff;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/file_adjunto.png") no-repeat 20px 20px #fff;
   margin-top: 20px;
   float: left;
   width: 100%;
@@ -2167,7 +2167,7 @@ ol.search-results li:last-child {
   }
   
   #main {
-    background: url("images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
     margin-bottom: 40px;
     background-size: 100%;
   }
@@ -2219,7 +2219,7 @@ ol.search-results li:last-child {
   }
   
   #main {
-    background: url("images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
     margin-bottom: 40px;
     background-size: 100%;
   }
@@ -2272,7 +2272,7 @@ ol.search-results li:last-child {
   } 
   
   #main {
-    background: url("images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
+    background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pattern.png") no-repeat scroll 0px bottom #ECECEC;
     margin-bottom: 40px;
     background-size: 100%;
   }
