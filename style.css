@@ -835,9 +835,9 @@ ul.secondary a.active {
 .view-novedades-home .view-header a {
   position: absolute;
   right: 5px;
-  top: 35px;
+  top: 45px;
   color: #343737;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Logged In */
@@ -943,7 +943,7 @@ ul.secondary a.active {
 }
 
 .group-gris h2 {
-  margin-top: 8px;
+  margin-top: 6px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -972,7 +972,7 @@ ul.secondary a.active {
 
 .field-name-field-caracteristicas li {
   float: left;
-  padding-left: 20px;
+  padding-left: 15px;
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/li.png") 0px 6px no-repeat;
   font-size: 16px;
   color: #000;
