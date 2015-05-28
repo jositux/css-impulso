@@ -842,7 +842,7 @@ ul.secondary a.active {
 
 /* Logged In */
 .logged-in .view-novedades-home .view-header a {
-  top: -50px;
+  top: 42px;
 }
 
 .novedades-texto {
@@ -1051,7 +1051,7 @@ ul.secondary a.active {
 
 /* Logged In */
 .logged-in .view-canales-home .view-header a {
-  top: -50px;
+  top: 40px;
 }
 
 .pane-canales-home .views-row {
