@@ -1090,7 +1090,7 @@ ul.secondary a.active {
 
 .node-type-page .group-header,
 .page-contacto .panel-col-top {
-  font-size: 21px;
+  font-size: 17px;
   font-weight: bold;
   color: #666666;
   margin-bottom: 30px;
@@ -1430,7 +1430,7 @@ ul.secondary a.active {
 
 .page-planes .pane-block-2,
 .page-canales .pane-block-1 {
-  font-size: 21px;
+  font-size: 17px;
   font-weight: bold;
   color: #666666;
   margin-bottom: 30px;
@@ -1541,8 +1541,8 @@ ul.secondary a.active {
   color: #4d4d4d;
   text-transform: uppercase;
   text-align: center;
-  font-size: 39px;
-  line-height: 2.4em;
+  font-size: 30px;
+  line-height: 3em;
 }
 
 #edit-tec-analogico a.active, #edit-tec-digital a.active {
