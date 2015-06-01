@@ -320,7 +320,7 @@ body.sidebar-second #sidebar-second {
 
 #header #logo {
   float: left;
-  margin: 0 1em 0em 0;
+  margin: 2px 1em 0em 0;
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo.png") no-repeat;
   width: 270px;
   height: 80px;
@@ -330,7 +330,7 @@ body.sidebar-second #sidebar-second {
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/logo_mini.png") no-repeat;
   width: 253px;
   height: 64px;
-  margin-top: -26px;
+  margin-top: -30px;
   margin-left: 18px;
 }
 
@@ -835,9 +835,9 @@ ul.secondary a.active {
 .view-novedades-home .view-header a {
   position: absolute;
   right: 5px;
-  top: 45px;
+  top: 42px;
   color: #343737;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Logged In */
@@ -1002,9 +1002,9 @@ ul.secondary a.active {
 .view-canales-home .view-header a {
   position: absolute;
   right: 5px;
-  top: 35px;
+  top: 42px;
   color: #343737;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .views-field-edit-term a {
