@@ -91,7 +91,7 @@ h2, .h2 {
 }
 
 h2.pane-title, .view-galeria-imagenes h2.title {
-  font-size: 35px;
+  font-size: 30px;
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
   padding-left: 40px;
   margin-top: 28px;
@@ -856,7 +856,7 @@ ul.secondary a.active {
 
 /* Logged In */
 .logged-in .view-novedades-home .view-header a {
-  top: 42px;
+  top: 38px;
 }
 
 .novedades-texto {
@@ -1578,7 +1578,7 @@ ul.secondary a.active {
 }
 
 .title-grilla {
-  font-size: 35px;
+  font-size: 30px;
   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/tri_rojo.png") 0px no-repeat;
   padding-left: 40px;
   margin-top: -45px;
