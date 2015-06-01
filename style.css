@@ -701,6 +701,15 @@ ul.secondary a.active {
   font-weight: bold;
 }
 
+#block-bean-footer-copyrigth a {
+  color: #fae708;
+}
+
+#block-bean-footer-copyrigth a:hover {
+  color: #ffff74;
+}
+
+
 #footer a.feed-icon {
   position: absolute;
   right: 0;
