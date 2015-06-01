@@ -674,9 +674,14 @@ ul.secondary a.active {
   float: right;
   margin-right: 160px;
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 24px;
 }
+
+#block-bean-footer-datos-de-contacto strong {
+  font-size: 16px;
+}
+
 
 #block-bean-footer-datos-de-contacto p {
   margin-bottom: 0;
