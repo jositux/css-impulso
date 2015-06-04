@@ -1254,6 +1254,12 @@ ul.secondary a.active {
   display: none;
 }
 
+/* 
+ * Empresa
+ * */
+
+
+.page-node-6 p {font-size:14px;}
 
 /* 
  * 15. Servicios 
