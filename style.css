@@ -1368,8 +1368,9 @@ ul.secondary a.active {
   font-weight: normal;
   color: #000000;
   margin-top: 25px;
-  line-height: 1.2;
   margin-left: 72px;
+  margin-bottom: 0;
+  line-height: 1.2;
 }
 
 #block-bean-afip-carpeta-pblico--2 .adjunto a {
