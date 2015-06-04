@@ -1251,7 +1251,11 @@ ul.secondary a.active {
 }
 
 #cboxClose {
-  display: none;
+   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+   width: 40px;
+   height: 40px;
+   right: 25px;
+   top: 25px;
 }
 
 
