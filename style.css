@@ -1170,11 +1170,11 @@ ul.secondary a.active {
 }
 
 .node-type-page .group-footer .jcarousel-skin-default .jcarousel-prev-horizontal {
-  left: 5px;
+  left: 9px;
 }
 
 .node-type-page .group-footer .jcarousel-skin-default .jcarousel-next-horizontal {
-  right: 0px;
+  right: 7px;
   background-position: 106% 50%;
 }
 
