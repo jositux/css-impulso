@@ -1258,6 +1258,11 @@ ul.secondary a.active {
    top: 25px;
 }
 
+#cboxClose:hover {
+   background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+   opacity: 0.9;	
+}
+
 
 /* 
  * 15. Servicios 
