@@ -1267,7 +1267,7 @@ ul.secondary a.active {
  * Empresa
  * */
 
-.page-node-6 p {font-size:14px;}
+.page-node-6 p .field-item even {font-size:15px;}
 
 /* 
  * 15. Servicios 
