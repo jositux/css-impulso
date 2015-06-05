@@ -1106,6 +1106,7 @@ ul.secondary a.active {
   float: left;
 }
 
+.panel-2col-stacked .panel-col-last,
 .node-type-page .group-right {
   width: 380px;
   float: right;
@@ -1272,7 +1273,7 @@ ul.secondary a.active {
 /* 
  * 15. Servicios 
  * */
- 
+.panel-2col-stacked .panel-col-first,
 .page-node-7 .group-left {
   margin-bottom: 100px;
   margin-top: -45px;
