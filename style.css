@@ -1100,6 +1100,7 @@ ul.secondary a.active {
   margin-bottom: 0;
 }
 
+.panel-2col-stacked .panel-col-first,
 .node-type-page .group-left {
   font-size: 19px;
   width: 750px;
@@ -1273,7 +1274,6 @@ ul.secondary a.active {
 /* 
  * 15. Servicios 
  * */
-.panel-2col-stacked .panel-col-first,
 .page-node-7 .group-left {
   margin-bottom: 100px;
   margin-top: -45px;
