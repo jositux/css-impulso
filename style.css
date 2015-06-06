@@ -924,6 +924,12 @@ ul.secondary a.active {
 
 .programacion-lista .logo {
   float: left;
+  height: 130px;
+}
+
+.programacion-lista .logo img {
+  height: 130px;
+  width: auto;
 }
 
 .programacion-lista .datos {
@@ -1837,6 +1843,28 @@ ul.secondary a.active {
   margin-left: 10px;
   margin-top: 10px;
   text-indent: -9999px;
+}
+
+/* Canales programacion */
+
+.page-canales-programacion-destacada .programacion-lista {
+  margin-bottom: 40px;
+}
+
+.page-canales-programacion-destacada .programacion-destacada .canal {
+  background: #666666;
+}
+
+.page-canales-programacion-destacada .programacion-destacada .programa,
+.page-canales-programacion-destacada .programacion-destacada .fecha {
+  color: #343737;
+}
+
+.view-programacion-destacada-aire-interna .views-row {
+  float: left;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #cccccc;
+  margin-bottom: 25px;
 }
 
 /* Jquery select box */
