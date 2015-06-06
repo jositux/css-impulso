@@ -905,6 +905,32 @@ ul.secondary a.active {
   float: right;
 }
 
+.pane-listado-program {
+  float: right;
+  width: 380px;
+}
+
+.pane-listado-program .programacion-lista {
+  margin-top: 73px;
+  background: #666666;
+}
+
+.pane-listado-program .programacion-lista .logo {
+  float: left;
+}
+
+.pane-listado-program .programacion-lista .datos {
+  float: left;
+  padding: 20px;
+}
+
+.pane-listado-program .titulo {
+  font-size: 25px;
+  color: white;
+}
+
+fae708
+
 
 /* Pane novedades, planes */
 .pane-novedades-home {
