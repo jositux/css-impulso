@@ -1855,9 +1855,8 @@ ul.secondary a.active {
   background: #666666;
 }
 
-.page-canales-programacion-destacada .programacion-destacada .programa,
-.page-canales-programacion-destacada .programacion-destacada .fecha {
-  color: #343737;
+.page-canales-programacion-destacada .programacion-destacada .canal .aire {
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pico-gray.png") no-repeat #fae708;
 }
 
 .page-canales-programacion-destacada h2.pane-title {
@@ -1870,6 +1869,7 @@ ul.secondary a.active {
   border-bottom: 0;
   margin-bottom: 0;
 }
+
 .page-canales-programacion-destacada .panel-col-first .views-row {
   float: left;
   padding-bottom: 20px;
