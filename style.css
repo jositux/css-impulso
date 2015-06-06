@@ -873,6 +873,7 @@ ul.secondary a.active {
   padding: 0 10px;
   font-weight: bold;
   font-size: 30px;
+  font-family: 'Source Sans Pro';
   line-height: 1em;
 }
 
@@ -1247,7 +1248,8 @@ ul.secondary a.active {
   margin-bottom: 30px;
 }
 
-.node-type-page .group-header p {
+.node-type-page .group-header p,
+.not-front .panel-col-top p {
   margin-bottom: 0;
 }
 
@@ -1600,7 +1602,6 @@ ul.secondary a.active {
   font-size: 17px;
   font-weight: bold;
   color: #666666;
-  margin-bottom: 30px;
 }
 
 .view-planes-lista .views-row {
@@ -2179,8 +2180,8 @@ ul.secondary a.active {
   width: 480px;
 }
 
-.page-contacto .panel-col-top {
-  margin-bottom: 20px;
+.page-contacto .panel-col-firs .panel-node {
+  float: left;
 }
 
 .page-contacto .panel-col-top p {
