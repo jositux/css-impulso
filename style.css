@@ -922,14 +922,26 @@ ul.secondary a.active {
 .pane-listado-program .programacion-lista .datos {
   float: left;
   padding: 20px;
+  text-transform: uppercase;
+  width: 234px;
 }
 
 .pane-listado-program .titulo {
   font-size: 25px;
   color: white;
+  font-weight: bold;
+  line-height: 1em;
 }
 
-fae708
+.pane-listado-program .titulo .descargar-listado {
+  font-size: 18px;
+  color: #fae708;
+  background: #343737;
+  text-align: center;
+  width: 234px;
+}
+
+
 
 
 /* Pane novedades, planes */
