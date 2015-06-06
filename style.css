@@ -809,9 +809,46 @@ ul.secondary a.active {
 }
 
 /*
- * 13. Home Novedades, Planes, Canales 
+ * 13. Home Programacion, Novedades, Planes, Canales 
  */
 
+/* Pane programacion home */
+
+.pane-prog-destacada-home {
+  width: 780px;
+  float: left;
+  position: relative;
+}
+
+.pane-prog-destacada-home .pane-content {
+  height: 90px;
+  padding: 20px;
+  background: #666666;
+}
+
+.view-prog-destacada-hom .view-header {
+  float: left;
+}
+
+.view-prog-destacada-hom .view-header a {
+  position: absolute;
+  right: 5px;
+  top: 42px;
+  color: #343737;
+  font-size: 16px;
+}
+
+.programacion-destacada .logo-canal {
+  float: left;
+  width: 90px;
+}
+
+.programacion-destacada .logo-canal img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pane novedades, planes */
 .pane-novedades-home {
   width: 66.6%;
   float: left;
