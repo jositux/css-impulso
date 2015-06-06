@@ -824,6 +824,7 @@ ul.secondary a.active {
   height: 90px;
   padding: 20px;
   background: #666666;
+  overflow: hidden;
 }
 
 .view-prog-destacada-home .view-header {
