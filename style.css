@@ -1851,6 +1851,18 @@ ul.secondary a.active {
 .page-canales-programacion-destacada .panel-col-top {
   float: left;
 }
+
+.view-programacion-destacada-aire-imagenes-interna {
+  float: left;
+}
+
+.pane-views pane-programacion-destacada-aire-imagenes-interna h2.pane-title {
+  margin-top: 0;
+}
+
+.pane-listado-de-programaci-n-interna {
+  margin-top: 42px;
+}
 .page-canales-programacion-destacada .programacion-lista {
   margin-bottom: 40px;
 }
