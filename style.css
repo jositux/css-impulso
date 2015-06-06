@@ -906,37 +906,41 @@ ul.secondary a.active {
   float: right;
 }
 
-.pane-listado-program {
+.pane-listado-program, .pane-listado-de-programaci-n-interna {
   float: right;
   width: 380px;
 }
 
 .pane-listado-program .programacion-lista {
-  margin-top: 73px;
+    margin-top: 73px;	
+}
+
+.programacion-lista {
   background: #666666;
+  width: 100%;
   height: 130px;
   float: left;
 }
 
-.pane-listado-program .programacion-lista .logo {
+.programacion-lista .logo {
   float: left;
 }
 
-.pane-listado-program .programacion-lista .datos {
+.programacion-lista .datos {
   float: left;
   padding: 20px;
   text-transform: uppercase;
   width: 234px;
 }
 
-.pane-listado-program .titulo {
+.programacion-lista .titulo {
   font-size: 25px;
   color: white;
   font-weight: bold;
   line-height: 1em;
 }
 
-.pane-listado-program .descargar-listado {
+.programacion-lista .descargar-listado {
   background: #343737;
   text-align: center;
   width: 234px;
@@ -944,7 +948,7 @@ ul.secondary a.active {
   margin-top: 6px;
 }
 
-.pane-listado-program .descargar-listado a {
+.programacion-lista .descargar-listado a {
   font-size: 18px;
   color: #fae708;
   width: 100%;
