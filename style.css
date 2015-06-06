@@ -856,13 +856,13 @@ ul.secondary a.active {
 .programacion-destacada .datos-publi {
   float: left;
   width: 635px;
-  margin-left: 12px;	
+  margin-left: 12px;
+  color: white;
 }
 
 .programacion-destacada .canal {
   height:34px;
   background: #343737;
-  color: white;
 }
 
 .programacion-destacada .canal .freq {
@@ -882,7 +882,7 @@ ul.secondary a.active {
 
 .programacion-destacada .canal .aire {
   font-size: 16px;
-  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pic.png) no-repeat #fae708;
+  background: url("http://site2015.imptv.gdotg.com/sites/all/themes/imptv2015/images/pico.png) no-repeat #fae708;
   text-transform: uppercase;
   float: right;
   color: #343737;
@@ -892,6 +892,18 @@ ul.secondary a.active {
   height: 34px;	
 }
 
+.programacion-destacada .programa {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.programacion-destacada .fecha {
+  font-size: 18px;
+}
+
+.programacion-destacada .duracion {
+  float: right;
+}
 
 
 /* Pane novedades, planes */
