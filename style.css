@@ -1870,14 +1870,14 @@ ul.secondary a.active {
   border-bottom: 0;
   margin-bottom: 0;
 }
-.page-canales-programacion-destacada .views-row {
+.page-canales-programacion-destacada .panel-col-first .views-row {
   float: left;
   padding-bottom: 20px;
   border-bottom: 2px solid #cccccc;
   margin-bottom: 25px;
 }
 
-.page-canales-programacion-destacada .views-row:last-child {
+.page-canales-programacion-destacada .panel-col-first .views-row:last-child {
   margin-bottom: 0;
 }
 
