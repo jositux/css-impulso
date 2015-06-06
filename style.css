@@ -833,7 +833,7 @@ ul.secondary a.active {
 
 .view-prog-destacada-home .view-header a {
   position: absolute;
-  right: 5px;
+  right: 0;
   top: 42px;
   color: #343737;
   font-size: 16px;
@@ -940,6 +940,8 @@ ul.secondary a.active {
   background: #343737;
   text-align: center;
   width: 234px;
+  padding: 4px 0;
+  margin-top: 6px;
 }
 
 .pane-listado-program .descargar-listado a {
