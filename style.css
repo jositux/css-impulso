@@ -981,6 +981,7 @@ ul.secondary a.active {
   margin-right: 0;
   padding-left: 25px;
   float: left;
+  clear: both;
   list-style-type: none;
 }
 
