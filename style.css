@@ -913,6 +913,8 @@ ul.secondary a.active {
 .pane-listado-program .programacion-lista {
   margin-top: 73px;
   background: #666666;
+  height: 130px;
+  float: left;
 }
 
 .pane-listado-program .programacion-lista .logo {
@@ -933,15 +935,17 @@ ul.secondary a.active {
   line-height: 1em;
 }
 
-.pane-listado-program .titulo .descargar-listado {
-  font-size: 18px;
-  color: #fae708;
+.pane-listado-program .descargar-listado {
   background: #343737;
   text-align: center;
   width: 234px;
 }
 
-
+.pane-listado-program .descargar-listado a {
+  font-size: 18px;
+  color: #fae708;
+  width: 100%;
+}
 
 
 /* Pane novedades, planes */
