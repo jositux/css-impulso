@@ -1608,6 +1608,7 @@ ul.secondary a.active {
   margin-bottom: 40px;
   position: relative;
   height: 320px;
+  float: left;
   overflow: hidden;
 }
 
