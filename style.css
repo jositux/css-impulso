@@ -826,11 +826,11 @@ ul.secondary a.active {
   background: #666666;
 }
 
-.view-prog-destacada-hom .view-header {
+.view-prog-destacada-home .view-header {
   float: left;
 }
 
-.view-prog-destacada-hom .view-header a {
+.view-prog-destacada-home .view-header a {
   position: absolute;
   right: 5px;
   top: 42px;
