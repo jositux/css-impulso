@@ -1848,6 +1848,9 @@ ul.secondary a.active {
 
 /* Canales programacion */
 
+.page-canales-programacion-destacada .panel-col-top {
+  float: left;
+}
 .page-canales-programacion-destacada .programacion-lista {
   margin-bottom: 40px;
 }
