@@ -889,7 +889,7 @@ ul.secondary a.active {
   float: right;
   color: #343737;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 10px 0 20px;
   line-height: 2.3;
   height: 34px;	
 }
