@@ -2191,14 +2191,11 @@ ul.secondary a.active {
 
 .page-contacto .panel-2col-stacked .panel-col-first {
   width: 680px;
+  margin-top: -28px;
 }
 
 .page-contacto .panel-2col-stacked .panel-col-last {
   width: 480px;
-}
-
-.page-contacto .panel-col-first .pane-node {
-  float: left;
 }
 
 .page-contacto .panel-col-top {
