@@ -822,7 +822,7 @@ ul.secondary a.active {
 
 .pane-prog-destacada-home .pane-content {
   height: 90px;
-  padding: 20px;
+  padding: 21px;
   background: #666666;
   overflow: hidden;
 }
@@ -901,10 +901,14 @@ ul.secondary a.active {
 
 .programacion-destacada .fecha {
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .programacion-destacada .duracion {
   float: right;
+  border: 1px solid #fff;
+  font-size:14px;
+  padding: 4px 6px;
 }
 
 .pane-listado-program, .pane-listado-de-programaci-n-interna {
@@ -919,17 +923,17 @@ ul.secondary a.active {
 .programacion-lista {
   background: #666666;
   width: 100%;
-  height: 130px;
+  height: 132px;
   float: left;
 }
 
 .programacion-lista .logo {
   float: left;
-  height: 130px;
+  height: 132px;
 }
 
 .programacion-lista .logo img {
-  height: 130px;
+  height: 132px;
   width: auto;
 }
 
