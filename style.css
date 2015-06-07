@@ -909,6 +909,7 @@ ul.secondary a.active {
   border: 1px solid #fff;
   font-size:14px;
   padding: 4px 6px;
+  line-height: 1;
 }
 
 .pane-listado-program, .pane-listado-de-programaci-n-interna {
