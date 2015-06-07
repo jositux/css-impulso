@@ -1602,6 +1602,7 @@ ul.secondary a.active {
   font-size: 17px;
   font-weight: bold;
   color: #666666;
+  margin-bottom: 30px;
 }
 
 .view-planes-lista .views-row {
@@ -2196,8 +2197,12 @@ ul.secondary a.active {
   width: 480px;
 }
 
-.page-contacto .panel-col-firs .panel-node {
+.page-contacto .panel-col-first .pane-node {
   float: left;
+}
+
+.page-contacto .panel-col-top {
+  margin-bottom: 30px;	
 }
 
 .page-contacto .panel-col-top p {
@@ -2279,7 +2284,7 @@ ul.secondary a.active {
 }
 
 .page-contacto .panel-2col-stacked .panel-col-last .pane-content {
-  margin-top: 80px;
+  margin-top: 82px;
 }
 
 .page-contacto .panel-2col-stacked .panel-col-last .pane-content p {
