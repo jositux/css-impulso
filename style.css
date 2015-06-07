@@ -2202,6 +2202,7 @@ ul.secondary a.active {
 }
 
 .page-contacto .panel-col-top {
+  float: left;
   margin-bottom: 30px;	
 }
 
