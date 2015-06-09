@@ -840,6 +840,10 @@ ul.secondary a.active {
   text-transform: lowercase;
 }
 
+.logged-in .view-prog-destacada-home .view-header a {
+  margin-top:-20px;
+}
+
 .pane-prog-destacada-home .views_slideshow_slide {
   width: 100%;
 }
@@ -1012,7 +1016,7 @@ ul.secondary a.active {
 
 /* Logged In */
 .logged-in .view-novedades-home .view-header a {
-  top: 38px;
+  top: -33px;
 }
 
 .novedades-texto {
@@ -1223,7 +1227,7 @@ ul.secondary a.active {
 
 /* Logged In */
 .logged-in .view-canales-home .view-header a {
-  top: 40px;
+  top: -35px;
 }
 
 .pane-canales-home .views-row {
