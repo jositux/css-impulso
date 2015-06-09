@@ -841,7 +841,7 @@ ul.secondary a.active {
 }
 
 .logged-in .view-prog-destacada-home .view-header a {
-  margin-top:-20px;
+  top:-20px;
 }
 
 .pane-prog-destacada-home .views_slideshow_slide {
