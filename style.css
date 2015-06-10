@@ -404,7 +404,7 @@ body.sidebar-second #sidebar-second {
 #navigation ul#main-menu li {
   float: left;
   margin: 0;
-  padding-left: 55px;
+  padding-left: 33px;
   display: block;
 }
 
@@ -637,7 +637,7 @@ ul.secondary a.active {
 }
 
 #block-bean-footer-men {
-  width: 50%;
+  width: 65%;
   float: left;
 }
 
