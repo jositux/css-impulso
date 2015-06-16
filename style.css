@@ -901,6 +901,8 @@ ul.secondary a.active {
 .programacion-destacada .programa {
   font-size: 25px;
   font-weight: bold;
+  height: 35px;
+  overflow: hidden;
 }
 
 .programacion-destacada .fecha {
