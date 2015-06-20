@@ -840,10 +840,6 @@ ul.secondary a.active {
   text-transform: lowercase;
 }
 
-.logged-in .view-prog-destacada-home .view-header a {
-  top:-20px;
-}
-
 .pane-prog-destacada-home .views_slideshow_slide {
   width: 100%;
 }
@@ -1014,11 +1010,6 @@ ul.secondary a.active {
   top: 42px;
   color: #343737;
   font-size: 16px;
-}
-
-/* Logged In */
-.logged-in .view-novedades-home .view-header a {
-  top: -33px;
 }
 
 .novedades-texto {
