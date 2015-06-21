@@ -1218,11 +1218,6 @@ ul.secondary a.active {
   display: none;
 }
 
-/* Logged In */
-.logged-in .view-canales-home .view-header a {
-  top: -35px;
-}
-
 .pane-canales-home .views-row {
   float: left;
   margin-right: 20px;
